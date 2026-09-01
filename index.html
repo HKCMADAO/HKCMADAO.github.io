@@ -7,7 +7,7 @@
   <style>
     :root {
       --bg: #0b0d10;
-      --panel: rgba(18, 22, 28, 0.92);
+      --panel: #12161c;
       --text: #f2f4f7;
       --muted: #a8b0bb;
       --accent: #ff8a2b;
@@ -22,40 +22,42 @@
       min-height: 100vh;
     }
 
-    /* Full-bleed cover hero */
     .hero {
       position: relative;
-      min-height: min(72vh, 640px);
+      min-height: min(78vh, 700px);
       display: flex;
       align-items: flex-end;
+      overflow: hidden;
       background:
-        linear-gradient(180deg, rgba(11, 13, 16, 0.15) 0%, rgba(11, 13, 16, 0.55) 45%, rgba(11, 13, 16, 0.96) 100%),
-        url("images/pic.png") center / cover no-repeat;
+        linear-gradient(90deg, rgba(11, 13, 16, 0.88) 0%, rgba(11, 13, 16, 0.55) 42%, rgba(11, 13, 16, 0.18) 70%, rgba(11, 13, 16, 0.35) 100%),
+        linear-gradient(180deg, rgba(11, 13, 16, 0.2) 0%, rgba(11, 13, 16, 0.15) 40%, rgba(11, 13, 16, 0.92) 100%),
+        url("images/pic.jpg") 62% center / cover no-repeat;
     }
     .hero-inner {
       width: 100%;
       max-width: 960px;
       margin: 0 auto;
-      padding: 36px 20px 40px;
+      padding: 48px 20px 44px;
     }
     .eyebrow {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .hero h1 {
-      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      font-size: clamp(2.6rem, 6.5vw, 3.8rem);
       line-height: 1.05;
       font-weight: 750;
-      margin-bottom: 12px;
-      text-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+      margin-bottom: 14px;
+      max-width: 12ch;
+      text-shadow: 0 10px 36px rgba(0, 0, 0, 0.55);
     }
     .hero .lead {
-      max-width: 36rem;
-      color: #d7dde6;
-      font-size: 1.05rem;
+      max-width: 32rem;
+      color: #d9e0ea;
+      font-size: 1.06rem;
     }
 
     .wrap {
@@ -64,28 +66,13 @@
       padding: 28px 20px 64px;
     }
 
-    .meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 18px 0 28px;
-    }
-    .chip {
-      font-size: 0.78rem;
-      color: #cfd6df;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 5px 12px;
-      background: rgba(255, 255, 255, 0.03);
-    }
-
     .grid {
       display: grid;
       gap: 16px;
       margin-bottom: 16px;
     }
     @media (min-width: 760px) {
-      .grid { grid-template-columns: 1.25fr 0.75fr; }
+      .grid { grid-template-columns: 1.3fr 0.7fr; }
     }
 
     section.panel {
@@ -95,7 +82,7 @@
       padding: 22px;
     }
     h2 {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--accent);
@@ -159,20 +146,13 @@
       <div class="eyebrow">Mobile game publishing studio</div>
       <h1>Zhumeng Workshop</h1>
       <p class="lead">
-        An early-stage studio shipping mobile games on Android —
+        An early-stage studio shipping Android games —
         starting with our own first titles and growing from there.
       </p>
     </div>
   </header>
 
   <div class="wrap">
-    <div class="meta-row">
-      <span class="chip">Android</span>
-      <span class="chip">Publishing</span>
-      <span class="chip">Indie games</span>
-      <span class="chip">Monetization-ready</span>
-    </div>
-
     <div class="grid">
       <section class="panel">
         <h2>What we do</h2>
