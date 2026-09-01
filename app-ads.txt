@@ -1,3 +1,10 @@
-# 接入 AppLovin 后，在 MAX 后台获取你的 app-ads.txt 行内容，替换本文件。
-# 格式示例（不要直接复制下面这行，以 AppLovin 后台为准）：
+# app-ads.txt for Zhumeng Workshop
+# This file authorizes advertising partners to sell ads for our mobile apps.
+# After AppLovin account approval, replace the sample line below with the official
+# entries provided in the AppLovin MAX dashboard (Account / app-ads.txt).
+#
+# Format example (do not use this placeholder as-is):
 # applovin.com, YOUR_PUBLISHER_ID, DIRECT, YOUR_ACCOUNT_ID
+#
+# Keep this file at the website root:
+# https://HKCMADAO.github.io/app-ads.txt
